@@ -19,19 +19,19 @@ export default App
 // (1) en Clear inside content. then create SimpleForm.jsx file creating SimpleForm folder creating components folder
 // -----------------------
 // Practice:
-import './App.css'
+// import './App.css'
 
-function App() {
+// function App() {
   
 
-  return (
-    <>
-          <h1>Get started</h1>
-          <SimpleForm></SimpleForm>
-    </>
-  )
-}
+//   return (
+//     <>
+//           <h1>Get started</h1>
+//           <SimpleForm></SimpleForm>
+//     </>
+//   )
+// }
 
-export default App
+// export default App
 
 // -------------------------------End:38_1-(1) to () --------------------------------
