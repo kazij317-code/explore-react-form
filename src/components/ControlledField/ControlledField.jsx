@@ -94,67 +94,211 @@
 
 
 // // -------------------------------End:38_2-(1) to () --------------------------------
-// -------------------------------Start: 38_3 ---------------------------------------
+// // -------------------------------Start: 38_3 ---------------------------------------
+
+// import React, { useState } from 'react';
+
+// const ControlledField = () => {
+    
+//     const [password, setPassword] = useState('');
+//     // (2)
+//     const [error, setError] = useState('');
+    
+//     const handleSubmit = (e) =>{
+      
+//         e.preventDefault();
+//         console.log('submitted');
+//         // (6) st commit (3)
+//         if(password.length < 6){
+//             setError('6 characters or longer password needed.')
+//         }
+//         else{
+//             setError('')
+//         }
+//         // (6) en . uncommit (3)  and then __get_form_data.js file and then create UnControlledField.jsx file creating UnControlledField folder in component folder
+//     }
+   
+//     const handlePasswordOnChange = e =>{
+
+//         console.log(e.target.value);
+//         // (1)
+//         setPassword(e.target.value);
+//         // (3)st
+//         if(password.length < 6){
+//             setError('Password must be 6 characters or longer.')
+//         }
+//         // (5)st
+//         else{
+//             setError('');
+//         }
+//         // (5)en
+//         // (3)en
+        
+//     }
+    
+
+
+//     return (
+//         <div>
+            
+//             <form onSubmit={handleSubmit}>
+                
+//                 <input type="email" name="email" id="" placeholder='Email' required/>
+//                 <br />
+                
+//                 <input type="password" name="password" id="" placeholder="Password" onChange={handlePasswordOnChange} defaultValue={password} required/>
+//                 <br />
+//                 <input type="submit" value="Submit" />
+//             </form>
+//             {/* (4)st */}
+//             <p style={{color: 'red'}}>
+//                 <small>{error}</small>
+//             </p>
+//             {/* (4)en */}
+            
+//         </div>
+//     );
+// };
+
+// export default ControlledField;
+
+// // ------------------------------
+// // Practice:
+// // import React from 'react';
+
+// // const ControlledField = () => {
+
+// //     const [password, setPassword] = useState('')
+// //     const [error, setError] = useState('');
+
+    
+
+// //     const handleSubmit = (e) =>{
+// //         e.preventDefault();
+// //         console.log('submitted');
+        
+// //         if(password.length < 6){
+// //             setError('6 characters or longer password needed.')
+// //         }
+// //         else{
+// //             setError('')
+// //         }
+// //     }
+
+    
+// //     const handlePasswordOnChange = e =>{
+// //         console.log(e.target.value);
+// //         setPassword(e.target.value);
+
+// //         if(password.length < 6){
+// //             setError('Password must be 6 characters or longer.')
+// //         }
+// //         else{
+// //             setError('');
+// //         }
+// //     }
+
+    
+// //     return (
+// //         <div>
+// //             <form onSubmit={handleSubmit}>
+// //                 <input type="email" name="email" id="" placeholder='Email' required />
+// //                 <br />
+// //                 <input type="password" name="password" id="" placeholder='password' onChange={handlePasswordOnChange} defaultValue={password} required />
+// //                 <br />
+// //                 <input type="submit" value="Submit" />
+// //             </form>
+// //             <p style={{color: 'red'}}><small>{error}</small>
+// //             </p>
+
+// //         </div>
+// //     );
+// // };
+
+// // export default ControlledField;
+
+
+// // -------------------------------End:38_3-(1) to () --------------------------------
+// -------------------------------Start: 38_4 ---------------------------------------
 
 import React, { useState } from 'react';
 
 const ControlledField = () => {
+    // (6)
+    const [name, setName] = useState('');
+    // (1)
+    const [email, setEmail] = useState('')
     
     const [password, setPassword] = useState('');
-    // (2)
     const [error, setError] = useState('');
     
     const handleSubmit = (e) =>{
-      
         e.preventDefault();
-        console.log('submitted');
-        // (6) st commit (3)
+        // console.log('submitted');
+        // (5) commit previous
+        // console.log(email, password);
+        // (9) commit previous then in App.jsx file
+        console.log(name, email, password);
+        
+
+        
+        
         if(password.length < 6){
             setError('6 characters or longer password needed.')
         }
         else{
             setError('')
         }
-        // (6) en . uncommit (3)  and then __get_form_data.js file and then create UnControlledField.jsx file creating UnControlledField folder in component folder
+        
     }
+    // (8)st
+    const handleNameChange = e =>{
+        setName(e.target.value)
+    }
+    // (8)en
+    
+    // (3)st
+    const handleEmailChange = e =>{
+        setEmail(e.target.value);
+    }
+    // (3)en
+    
    
     const handlePasswordOnChange = e =>{
 
         console.log(e.target.value);
-        // (1)
         setPassword(e.target.value);
-        // (3)st
         if(password.length < 6){
             setError('Password must be 6 characters or longer.')
         }
-        // (5)st
         else{
             setError('');
         }
-        // (5)en
-        // (3)en
-        
+       
     }
     
-
-
     return (
         <div>
             
             <form onSubmit={handleSubmit}>
-                
-                <input type="email" name="email" id="" placeholder='Email' required/>
+                {/* (7)st */}
+                <input type="text" defaultValue={name} onChange={handleNameChange} placeholder='Name' />
                 <br />
-                
+                {/* (7)en */}
+
+                {/* (2) onChange={handleEmailChange}*/}
+                {/* (4)defaultValue= {email} */}
+                <input type="email" onChange={handleEmailChange}  defaultValue= {email} name="email" id="" placeholder='Email' required/>
+                <br />
                 <input type="password" name="password" id="" placeholder="Password" onChange={handlePasswordOnChange} defaultValue={password} required/>
                 <br />
                 <input type="submit" value="Submit" />
             </form>
-            {/* (4)st */}
+           
             <p style={{color: 'red'}}>
                 <small>{error}</small>
             </p>
-            {/* (4)en */}
+        
             
         </div>
     );
@@ -217,5 +361,4 @@ export default ControlledField;
 
 // export default ControlledField;
 
-
-// -------------------------------End:38_3-(1) to () --------------------------------
+// -------------------------------End:38_4-(1) to () --------------------------------
