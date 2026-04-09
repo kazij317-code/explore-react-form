@@ -312,6 +312,8 @@ export default ControlledField;
 
 // const ControlledField = () => {
 
+//     const [name, setName] = useState('');
+//     const [email, setEmail] = useState('');
 //     const [password, setPassword] = useState('')
 //     const [error, setError] = useState('');
 
@@ -319,7 +321,7 @@ export default ControlledField;
 
 //     const handleSubmit = (e) =>{
 //         e.preventDefault();
-//         console.log('submitted');
+//         console.log(name, email, password);
         
 //         if(password.length < 6){
 //             setError('6 characters or longer password needed.')
@@ -328,7 +330,12 @@ export default ControlledField;
 //             setError('')
 //         }
 //     }
-
+//     const handleNameChange = e =>{
+//         setName(e.target.value);
+//     }
+//     const handleEmailChange = e =>{
+//         setEmail(e.target.value)
+//     }
     
 //     const handlePasswordOnChange = e =>{
 //         console.log(e.target.value);
@@ -346,7 +353,9 @@ export default ControlledField;
 //     return (
 //         <div>
 //             <form onSubmit={handleSubmit}>
-//                 <input type="email" name="email" id="" placeholder='Email' required />
+//                 <input type="text" defaultValue={name} onChange={handleNameChange} placeholder='Name' />
+//                 <br />
+//                 <input defaultValue={email} onChange={handleEmailChange} type="email" name="email" id="" placeholder='Email' required />
 //                 <br />
 //                 <input type="password" name="password" id="" placeholder='password' onChange={handlePasswordOnChange} defaultValue={password} required />
 //                 <br />

@@ -163,6 +163,7 @@
 import './App.css'
 import ControlledField from './components/ControlledField/ControlledField'
 import FormAction from './components/FormAction/FormAction'
+import HookForm from './components/HookForm/HookForm'
 import SimpleForm from './components/SimpleForm/SimpleForm'
 import UnControlledField from './components/UnControlledField/UnControlledField'
 
@@ -174,10 +175,13 @@ function App() {
           <h1>Explore React Form</h1>
           {/* <SimpleForm></SimpleForm> */}
           {/* <FormAction></FormAction> */}
-          <ControlledField></ControlledField>
+          {/* <ControlledField></ControlledField> */}
           
           {/* <UnControlledField></UnControlledField> */}
           {/* (10) commit <UnControlledField> and uncommit <ControlledField> then create useInputField.jsx file creating hooks folder in src folder*/}
+          {/* (13) commit <ControlledField> and <HookForm +Enter */}
+          <HookForm></HookForm>
+          {/* (13)en then in HookForm.jsx file */}
 
           {/* extra from me */}
           {/* <h1>Explore React Form</h1>
@@ -213,7 +217,11 @@ export default App
 //           {/* <SimpleForm></SimpleForm> */}
 //           {/* <FormAction></FormAction> */}
 //           {/* <ControlledField></ControlledField> */}
-//           <UnControlledField></UnControlledField>
+//           {/* <UnControlledField></UnControlledField>
+//            */}
+//            {/* <ControlledField></ControlledField>
+//             */}
+//           <HookForm></HookForm>
 //     </>
 //   )
 // }
