@@ -17,5 +17,19 @@ const ProductManagement = () => {
 
 export default ProductManagement;
 // (1)en then create ProductForm in ProductManagement Folder
+// ------------------------------------------------------
+// Practice:
+// import React from 'react';
+
+// const ProductManagement = () => {
+//     return (
+//         <div>
+//             <ProductForm></ProductForm>
+//             <ProductTable></ProductTable>
+//         </div>
+//     );
+// };
+
+// export default ProductManagement;
 
 // -------------------------------End:38_5-(1) to () --------------------------------

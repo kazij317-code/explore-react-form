@@ -251,7 +251,7 @@ function App() {
           
           {/* <UnControlledField></UnControlledField> */}
          
-          <HookForm></HookForm>
+          {/* <HookForm></HookForm> */}
           {/* (5) commit Previous and <ProductManagement + enter then in ProductForm.jsx file*/}
           <ProductManagement></ProductManagement>
 
@@ -293,7 +293,8 @@ export default App
 //            */}
 //            {/* <ControlledField></ControlledField>
 //             */}
-//           <HookForm></HookForm>
+//           {/* <HookForm></HookForm> */}
+//           <ProductManagement></ProductManagement>
 //     </>
 //   )
 // }
