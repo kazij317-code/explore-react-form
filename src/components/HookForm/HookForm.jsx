@@ -19,7 +19,7 @@ const [name, nameOnChange] = useInputField('')
         // console.log('submit', name);
         // (21)commit previous
         // console.log('submit', name, email);
-        // (24)commit previouse
+        // (24)commit previous then create ProductManagement.jsx file creating ProductManagement folder in component folder
         console.log('submit', name, email, password);
     }
     // (14)en
