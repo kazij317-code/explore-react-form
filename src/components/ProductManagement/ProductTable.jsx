@@ -1,10 +1,15 @@
 // -------------------------------Start: 38_5 ---------------------------------------
 // (3)st rsc+enter
 import React from 'react';
-
-const ProductTable = () => {
+// (6)ProductTable = ({products})
+const ProductTable = ({products}) => {
     return (
         <div>
+            {/* (7) */}
+            <h3>Products: {products.length}</h3>
+            {/* (8)st */}
+            
+            {/* (8)en */}
             
         </div>
     );
