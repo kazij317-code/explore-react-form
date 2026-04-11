@@ -89,9 +89,11 @@
 // // -------------------------------End:38_5-(1) to () --------------------------------
 // -------------------------------Start: 38_6 ---------------------------------------
 
-import React from 'react';
+import React, { useState } from 'react';
 // (3) ProductForm = ({handleAddProduct})
 const ProductForm = ({handleAddProduct}) => {
+    // (9)
+    const [error, setError] = useState('');
     
     const handleProductSubmit = e =>{
         e.preventDefault();
@@ -102,6 +104,27 @@ const ProductForm = ({handleAddProduct}) => {
         const price = e.target.price.value;
         const quantity = e.target.quantity.value;
         // console.log(name, price, quantity);
+        // (10)st
+        // validation
+       if(name.length === 0){
+        setError('Please provide a product name');
+        // (13)
+        return
+       }
+       else if(price.length === 0){
+        setError('Please provide a price');
+        // (14)
+        return
+       }
+       else if(price < 0){
+        setError('Price can not be negative')
+        // (15)
+        return
+       }
+       else{
+        setError('');
+       }
+        // (10)en
        
         const newProduct = {
             name, 
@@ -111,6 +134,11 @@ const ProductForm = ({handleAddProduct}) => {
         // console.log(newProduct); 
         // (4)commit previous and then in ProductManagement.jsx file
         handleAddProduct(newProduct);
+        // (12)st 
+        // if(!error){
+        //     handleAddProduct(newProduct);
+        // }
+        // (12)en 
         
     }
    
@@ -128,6 +156,8 @@ const ProductForm = ({handleAddProduct}) => {
                 <br />
                 <input type="submit" value="Submit" />
             </form>
+            {/* (11) */}
+            <p style={{color:'red'}}><small>{error}</small></p>
            
         </div>
     );
@@ -139,7 +169,10 @@ export default ProductForm;
 // Practice:
 // import React from 'react';
 
-// const ProductForm = () => {
+// const ProductForm = ({handleAddProduct}) => {
+
+//     const [error, serError] = useState('');
+
 //     const handleProductSubmit = e =>{
 //         e.preventDefault();
 //         // console.log(e.target);
@@ -148,12 +181,30 @@ export default ProductForm;
 //         const price = e.target.price.value;
 //         const quantity = e.target.price.value;
 //         // console.log(name, price, quantity);
+
+//         if(name.length === 0){
+//             setError('Please provide a product name');
+//             return
+//         }
+//         else if(price.length === 0){
+//             setError('Please provide a price');
+//             return
+//         }
+//         else if(price <0){
+//             setError('Price can not be negative')
+//             return
+//         }
+//         else{
+//             setError('');
+//         }
+
 //         const newProduct = {
 //             name, 
 //             price, 
 //             quantity
 //         }
-//         console.log(newProduct);       
+//         // console.log(newProduct);   
+//         handleAddProduct(newProduct);    
 //     }
 
 //     return (
@@ -169,6 +220,7 @@ export default ProductForm;
 //                 <input type="submit" value="Submit" />
 
 //             </form>
+//             <p style={{color:'red'}}><small>{error}</small></p>
             
 //         </div>
 //     );
