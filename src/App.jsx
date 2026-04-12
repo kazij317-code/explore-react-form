@@ -355,28 +355,28 @@ export default App
 
 // -----------------------
 // Practice:
-import './App.css'
+// import './App.css'
 
-function App() {
+// function App() {
   
 
-  return (
-    <>
-          <h1>Get started</h1>
-          {/* <SimpleForm></SimpleForm> */}
-          {/* <FormAction></FormAction> */}
-          {/* <ControlledField></ControlledField> */}
-          {/* <UnControlledField></UnControlledField>
-           */}
-           {/* <ControlledField></ControlledField>
-            */}
-          {/* <HookForm></HookForm> */}
-          {/* <ProductManagement></ProductManagement> */}
-          <FamilyTree></FamilyTree>
-    </>
-  )
-}
+//   return (
+//     <>
+//           <h1>Get started</h1>
+//           {/* <SimpleForm></SimpleForm> */}
+//           {/* <FormAction></FormAction> */}
+//           {/* <ControlledField></ControlledField> */}
+//           {/* <UnControlledField></UnControlledField>
+//            */}
+//            {/* <ControlledField></ControlledField>
+//             */}
+//           {/* <HookForm></HookForm> */}
+//           {/* <ProductManagement></ProductManagement> */}
+//           <FamilyTree></FamilyTree>
+//     </>
+//   )
+// }
 
-export default App
+// export default App
 
 // -------------------------------End:38_7-(1) to () --------------------------------

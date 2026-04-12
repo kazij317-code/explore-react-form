@@ -1,27 +1,79 @@
-// -------------------------------Start: 38_7 ---------------------------------------
-// (1)st rsc+enter
-import React from 'react';
+// // -------------------------------Start: 38_7 ---------------------------------------
+// // (1)st rsc+enter
+// import React from 'react';
+// import Grandpa from './Grandpa';
+// // (10)st
+// import './FamilyTree.css'
+// // (10)en then in FamilyTree.css file
+
+// const FamilyTree = () => {
+//     // (22)st
+//     const asset = 'diamond';
+//     // (22)en then in Special.jsx file
+//     return (
+//         <div className='family-tree'>
+//             <h2>Family Tree</h2>
+//             {/* (4) st*/}
+//             <Grandpa></Grandpa>
+//             {/* (4) en then create Dad.jsx file in FamilyTree folder*/}
+//         </div>
+//     );
+// };
+
+// export default FamilyTree;
+// // (1)en then in App.jsx file 
+// // ------------------------------
+// // Practice:
+// // import React from 'react';
+
+// // import './FamilyTree.css'
+
+// // const FamilyTree = () => {
+// //     const asset = 'diamond'
+// //     return (
+// //         <div className='family-tree'>
+// //             <h2>Family Tree</h2>
+// //             <Grandpa></Grandpa>
+// //         </div>
+// //     );
+// // };
+
+// // export default FamilyTree;
+
+// // -------------------------------End:38_7-(1) to () --------------------------------
+// -------------------------------Start: 38_8 ---------------------------------------
+
+import React, { createContext } from 'react';
 import Grandpa from './Grandpa';
-// (10)st
+
 import './FamilyTree.css'
-// (10)en then in FamilyTree.css file
+// (16)
+export const AssetContext = createContext('');
+
 
 const FamilyTree = () => {
-    // (22)st
+   
     const asset = 'diamond';
-    // (22)en then in Special.jsx file
+    // (18)
+    const newAsset = 'gold';
+    
     return (
         <div className='family-tree'>
             <h2>Family Tree</h2>
-            {/* (4) st*/}
-            <Grandpa></Grandpa>
-            {/* (4) en then create Dad.jsx file in FamilyTree folder*/}
+            {/* (1) asset={asset} then in Grandpa.jsx file*/}
+            {/* <Grandpa asset={asset}></Grandpa> */}
+            {/* (17)st commit previous */}
+            {/* (19) value={newAsset} then in Special.jsx file*/}
+            <AssetContext.Provider value={newAsset}>
+                <Grandpa asset={asset}></Grandpa>
+            </AssetContext.Provider>
+            {/* (17)en */}
         </div>
     );
 };
 
 export default FamilyTree;
-// (1)en then in App.jsx file 
+
 // ------------------------------
 // Practice:
 // import React from 'react';
@@ -40,6 +92,6 @@ export default FamilyTree;
 
 // export default FamilyTree;
 
-// -------------------------------End:38_7-(1) to () --------------------------------
+// -------------------------------End:38_8-(1) to () --------------------------------
 
 

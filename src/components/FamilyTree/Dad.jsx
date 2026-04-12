@@ -4,14 +4,15 @@ import React from 'react';
 import Myself from './Myself';
 import Brother from './Brother';
 import Sister from './Sister';
-
-const Dad = () => {
+// (4)Dad = ({asset})
+const Dad = ({asset}) => {
     return (
         <div>
             <h3>Dad</h3>
             {/* (16)st */}
             <section className='flex'>
-                <Myself></Myself>
+                {/* (5)<Myself asset={asset} then in Myself.jsx file*/}
+                <Myself asset={asset}></Myself>
                 <Brother></Brother>
                 <Sister></Sister>
             </section>
