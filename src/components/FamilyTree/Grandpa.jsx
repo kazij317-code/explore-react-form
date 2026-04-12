@@ -74,14 +74,14 @@ export default Grandpa;
 // Practice:
 // import React from 'react';
 
-// const Grandpa = () => {
+// const Grandpa = ({asset}) => {
 //     return (
 //         <div className='flex'>
 //             <h3>Grandpa</h3>
 //             <section>
-//                 <Dad></Dad>
+//                 <Dad asset={asset}></Dad>
 //                 <Uncle></Uncle>
-//                 <Aunt></Aunt>
+//                 <Aunt asset={asset}></Aunt>
 //             </section>
             
 //         </div>

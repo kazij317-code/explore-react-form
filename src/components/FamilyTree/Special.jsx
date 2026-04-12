@@ -33,9 +33,10 @@ import React, { useContext } from 'react';
 import { AssetContext } from './FamilyTree';
 // (8) Special = ({name, asset})
 const Special = ({name, asset}) => {
-    // (20)st AssetContext + enter
+    // (20)st useContext + enter, AssetContext + enter
     const newAsset = useContext(AssetContext);
     console.log('new asset', newAsset);
+    // export const AssetContext = createContext('');
     // (20)en 
 
 
@@ -57,10 +58,16 @@ export default Special;
 // Practice:
 // import React from 'react';
 
-// const Special = ({name}) => {
+// const Special = ({name, asset}) => {
+//     const newAsset = useContext(AssetContext)
+//     console.log('new asset', newAsset);
+    
+
 //     return (
 //         <div>
 //             <h3>Special:{name}</h3>
+//             <p>Asset: {asset}</p>
+//             <p>New Asset: {newAsset}</p>
 //         </div>
 //     );
 // };

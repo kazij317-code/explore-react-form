@@ -52,11 +52,11 @@ export default Myself;
 // Practice:
 // import React from 'react';
 
-// const Myself = () => {
+// const Myself = ({asset}) => {
 //     return (
 //         <div>
 //             <h3>Myself</h3>
-//             <Special></Special>
+//             <Special asset={asset}></Special>
 //         </div>
 //     );
 // };

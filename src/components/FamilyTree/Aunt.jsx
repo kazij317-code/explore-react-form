@@ -65,12 +65,12 @@ export default Aunt;
 // Practice:
 // import React from 'react';
 
-// const Aunt = () => {
+// const Aunt = ({asset}) => {
 //     return (
 //         <div>
 //             <h3>Aunt</h3>
 //             <section>
-//                 <Cousin name='Tom Tom'></Cousin>
+//                 <Cousin asset={asset} name='Tom Tom'></Cousin>
 //                 <Cousin name='Jom Jom'></Cousin>
 //             </section>
 //         </div>

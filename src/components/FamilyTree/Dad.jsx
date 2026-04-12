@@ -1,27 +1,26 @@
 // -------------------------------Start: 38_7 ---------------------------------------
 // (5)st rsc+enter
-import React from 'react';
-import Myself from './Myself';
-import Brother from './Brother';
-import Sister from './Sister';
-// (4)Dad = ({asset})
-const Dad = ({asset}) => {
-    return (
-        <div>
-            <h3>Dad</h3>
-            {/* (16)st */}
-            <section className='flex'>
-                {/* (5)<Myself asset={asset} then in Myself.jsx file*/}
-                <Myself asset={asset}></Myself>
-                <Brother></Brother>
-                <Sister></Sister>
-            </section>
-            {/* (16)en then create Cousin.jsx file in FamilyTree folder*/}
-        </div>
-    );
-};
+// import React from 'react';
+// import Myself from './Myself';
+// import Brother from './Brother';
+// import Sister from './Sister';
 
-export default Dad;
+// const Dad = () => {
+//     return (
+//         <div>
+//             <h3>Dad</h3>
+//             {/* (16)st */}
+//             <section className='flex'>
+//                 <Myself></Myself>
+//                 <Brother></Brother>
+//                 <Sister></Sister>
+//             </section>
+//             {/* (16)en then create Cousin.jsx file in FamilyTree folder*/}
+//         </div>
+//     );
+// };
+
+// export default Dad;
 // (5)en then create Uncle.jsx file in FamilyTree folder
 // ---------------------
 // Practice:
@@ -42,3 +41,47 @@ export default Dad;
 
 // export default Dad;
 // -------------------------------End:38_7-(1) to () --------------------------------
+// -------------------------------Start: 38_8 ---------------------------------------
+
+import React from 'react';
+import Myself from './Myself';
+import Brother from './Brother';
+import Sister from './Sister';
+// (4)Dad = ({asset})
+const Dad = ({asset}) => {
+    return (
+        <div>
+            <h3>Dad</h3>
+            
+            <section className='flex'>
+                {/* (5)<Myself asset={asset} then in Myself.jsx file*/}
+                <Myself asset={asset}></Myself>
+                <Brother></Brother>
+                <Sister></Sister>
+            </section>
+            
+        </div>
+    );
+};
+
+export default Dad;
+// (5)en then create Uncle.jsx file in FamilyTree folder
+// ---------------------
+// Practice:
+// import React from 'react';
+
+// const Dad = ({asset}) => {
+//     return (
+//         <div>
+//             <h3>Dad</h3>
+//             <section className='flex'>
+//                 <Myself asset={asset}></Myself>
+//                 <Brother></Brother>
+//                 <Sister></Sister>
+//             </section>
+//         </div>
+//     );
+// };
+
+// export default Dad;
+// -------------------------------End:38_8-(1) to () --------------------------------
