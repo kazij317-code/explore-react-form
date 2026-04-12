@@ -27,21 +27,66 @@
 
 // // export default Cousin;
 // // -------------------------------End:38_7-(1) to () --------------------------------
-// -------------------------------Start: 38_8 ---------------------------------------
+// // -------------------------------Start: 38_8 ---------------------------------------
 
+// import React from 'react';
+// import Special from './Special';
+// // (14) Cousin = ({name, asset})
+// const Cousin = ({name, asset}) => {
+//     return (
+//         <div>
+//             <h3>{name}</h3>
+//         {/* (10)st  */}
+//             {
+//                 // (15) <Special asset={asset} then in FamilyTree.jsx file>
+//                 name === 'Tom Tom' && <Special asset={asset}></Special>
+//             }
+//         {/* (10)en then in Grandpa.jsx file  */}
+//         </div>
+//     );
+// };
+
+// export default Cousin;
+
+
+// // ---------------------------------
+// // Practice:
+// // import React from 'react';
+
+// // const Cousin = ({name, asset}) => {
+// //     return (
+// //         <div>
+// //             <h3>{name}</h3>
+// //             {
+// //                 name === 'Tom Tom' && <Special asset={asset}></Special>
+// //             }
+            
+// //         </div>
+// //     );
+// // };
+
+// // export default Cousin;
+// // -------------------------------End:38_8-(1) to () --------------------------------
+// -------------------------------Start: 38_9 ---------------------------------------
 import React from 'react';
 import Special from './Special';
-// (14) Cousin = ({name, asset})
+import Friend from './Friend';
+
 const Cousin = ({name, asset}) => {
     return (
         <div>
             <h3>{name}</h3>
-        {/* (10)st  */}
+       
             {
-                // (15) <Special asset={asset} then in FamilyTree.jsx file>
+                
                 name === 'Tom Tom' && <Special asset={asset}></Special>
             }
-        {/* (10)en then in Grandpa.jsx file  */}
+        {/* (9)st <Friend + enter */}
+            {
+                name === 'Jom Jom' && <Friend></Friend>
+            }
+        {/* (9)en then in Friend.jsx file */}
+
         </div>
     );
 };
@@ -66,4 +111,4 @@ export default Cousin;
 // };
 
 // export default Cousin;
-// -------------------------------End:38_8-(1) to () --------------------------------
+// -------------------------------End:38_9-(1) to () --------------------------------
