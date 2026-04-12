@@ -24,12 +24,27 @@ const Friend = () => {
             {/* extra */}
             <button onClick={handleAddMoney}>Add 2000 tk</button>
             {/* extra */}
-            
+
         </div>
     );
 };
 
 export default Friend;
 // (8)en then Cousin.jsx file
+// --------------------
+// Practice:
+// import React from 'react';
+
+// const Friend = () => {
+//     const [money, setMoney] use(MoneyContext)
+//     return (
+//         <div>
+//             <h3>Friend</h3>
+//             <p>Family got: {money} </p>
+//         </div>
+//     );
+// };
+
+// export default Friend;
 
 // -------------------------------End:38_9-(1) to () --------------------------------

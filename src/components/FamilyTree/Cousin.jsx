@@ -105,6 +105,9 @@ export default Cousin;
 //             {
 //                 name === 'Tom Tom' && <Special asset={asset}></Special>
 //             }
+//             {
+//                 name === 'Jom Jom' && <Friend></Friend> 
+//             }
             
 //         </div>
 //     );

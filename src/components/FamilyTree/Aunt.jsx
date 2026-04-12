@@ -120,6 +120,11 @@ export default Aunt;
 // import React from 'react';
 
 // const Aunt = ({asset}) => {
+//     const [money, setMoney] = use(MoneyContext);
+
+//     const handleAddMoney = () =>{
+//         setMoney(money + 5000)
+//     }
 //     return (
 //         <div>
 //             <h3>Aunt</h3>
@@ -127,6 +132,7 @@ export default Aunt;
 //                 <Cousin asset={asset} name='Tom Tom'></Cousin>
 //                 <Cousin name='Jom Jom'></Cousin>
 //             </section>
+//             <button onClick ={handleAddMoney}>Add 5000 tk</button>
 //         </div>
 //     );
 // };

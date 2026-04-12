@@ -52,11 +52,11 @@
 
 
 // const FamilyTree = () => {
-   
+
 //     const asset = 'diamond';
 //     // (18)
 //     const newAsset = 'gold';
-    
+
 //     return (
 //         <div className='family-tree'>
 //             <h2>Family Tree</h2>
@@ -83,14 +83,14 @@
 // // export const AssetContext = createContext('');
 
 // // const FamilyTree = () => {
-    
+
 // //     const asset = 'diamond'
 // //     const newAsset = 'gold'
-    
+
 // //     return (
 // //         <div className='family-tree'>
 // //             <h2>Family Tree</h2>
-            
+
 // //             <AssetContext.Provider value={newAsset}>
 // //                 <Grandpa asset={asset}></Grandpa>
 // //             </AssetContext.Provider>    
@@ -113,19 +113,19 @@ export const MoneyContext = createContext(0);
 
 
 const FamilyTree = () => {
-//    (3)
+    //    (3)
     const [money, setMoney] = useState(0);
 
     const asset = 'diamond';
- 
+
     const newAsset = 'gold';
-    
+
     return (
         <div className='family-tree'>
             <h2>Family Tree</h2>
             {/* (5) then in Brother.jsx file*/}
             <h4>Total Family Money: {money}</h4>
-            
+
             {/* <AssetContext.Provider value={newAsset}>
                 <Grandpa asset={asset}></Grandpa>
             </AssetContext.Provider> */}
@@ -138,7 +138,7 @@ const FamilyTree = () => {
                 </AssetContext.Provider>
             </MoneyContext>
             {/* (2)en */}
-           
+
         </div>
     );
 };
@@ -147,7 +147,7 @@ export default FamilyTree;
 // ----------------------------
 /**
  * 1. create a context using createContext with a default value make sure you export the context to be used in other files. 
- * */ 
+ * */
 
 // ------------------------------
 // Practice:
@@ -157,18 +157,26 @@ export default FamilyTree;
 
 // export const AssetContext = createContext('');
 
+// export const MoneyContext = createContext(0);
+
 // const FamilyTree = () => {
-    
+
+//     const [money, setMoney] = useState(0)
+
 //     const asset = 'diamond'
 //     const newAsset = 'gold'
-    
+
 //     return (
 //         <div className='family-tree'>
 //             <h2>Family Tree</h2>
-            
-//             <AssetContext.Provider value={newAsset}>
-//                 <Grandpa asset={asset}></Grandpa>
-//             </AssetContext.Provider>    
+//             <h4>Total Family Money: {money}
+
+
+//             <MoneyContext value={[money, setMoney]}>
+//                 <AssetContext.Provider value={newAsset}>
+//                     <Grandpa asset={asset}></Grandpa>
+//                 </AssetContext.Provider>
+//             </MoneyContext>
 //         </div>
 //     );
 // };
