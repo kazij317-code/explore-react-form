@@ -229,10 +229,84 @@
 // // export default App
 
 // // -------------------------------End:38_4-(1) to () --------------------------------
-// -------------------------------Start: 38_5 ---------------------------------------
+// // -------------------------------Start: 38_5 ---------------------------------------
+
+// import './App.css'
+// import ControlledField from './components/ControlledField/ControlledField'
+// import FormAction from './components/FormAction/FormAction'
+// import HookForm from './components/HookForm/HookForm'
+// import ProductManagement from './components/ProductManagement/ProductManagement'
+// import SimpleForm from './components/SimpleForm/SimpleForm'
+// import UnControlledField from './components/UnControlledField/UnControlledField'
+
+// function App() {
+  
+
+//   return (
+//     <>
+//           <h1>Explore React Form</h1>
+//           {/* <SimpleForm></SimpleForm> */}
+//           {/* <FormAction></FormAction> */}
+//           {/* <ControlledField></ControlledField> */}
+          
+//           {/* <UnControlledField></UnControlledField> */}
+         
+//           {/* <HookForm></HookForm> */}
+//           {/* (5) commit Previous and <ProductManagement + enter then in ProductForm.jsx file*/}
+//           <ProductManagement></ProductManagement>
+
+//           {/* extra from me */}
+//           {/* <h1>Explore React Form</h1>
+//           <h2>Simple Form</h2>
+//           <SimpleForm></SimpleForm>
+//           <br />
+//           <h2>Form Action</h2>
+//           <FormAction></FormAction>
+//           <br />
+//           <h2>Controlled Field</h2>
+//           <ControlledField></ControlledField>
+//           <br />
+//           <h2>Un Controlled Field</h2>
+//           <UnControlledField></UnControlledField> */}
+//            {/* extra from me */}
+
+//     </>
+//   )
+// }
+
+// export default App
+
+// // -----------------------
+// // Practice:
+// // import './App.css'
+
+// // function App() {
+  
+
+// //   return (
+// //     <>
+// //           <h1>Get started</h1>
+// //           {/* <SimpleForm></SimpleForm> */}
+// //           {/* <FormAction></FormAction> */}
+// //           {/* <ControlledField></ControlledField> */}
+// //           {/* <UnControlledField></UnControlledField>
+// //            */}
+// //            {/* <ControlledField></ControlledField>
+// //             */}
+// //           {/* <HookForm></HookForm> */}
+// //           <ProductManagement></ProductManagement>
+// //     </>
+// //   )
+// // }
+
+// // export default App
+
+// // -------------------------------End:38_5-(1) to () --------------------------------
+// -------------------------------Start: 38_7 ---------------------------------------
 
 import './App.css'
 import ControlledField from './components/ControlledField/ControlledField'
+import FamilyTree from './components/FamilyTree/FamilyTree'
 import FormAction from './components/FormAction/FormAction'
 import HookForm from './components/HookForm/HookForm'
 import ProductManagement from './components/ProductManagement/ProductManagement'
@@ -252,8 +326,11 @@ function App() {
           {/* <UnControlledField></UnControlledField> */}
          
           {/* <HookForm></HookForm> */}
-          {/* (5) commit Previous and <ProductManagement + enter then in ProductForm.jsx file*/}
-          <ProductManagement></ProductManagement>
+          
+          {/* <ProductManagement></ProductManagement> */}
+          {/* (2) st commit previous and <FamilyTree+enter */}
+          <FamilyTree></FamilyTree>
+          {/* (2)en then create Grandpa.jsx file in FamilyTree folder*/}
 
           {/* extra from me */}
           {/* <h1>Explore React Form</h1>
@@ -278,27 +355,28 @@ export default App
 
 // -----------------------
 // Practice:
-// import './App.css'
+import './App.css'
 
-// function App() {
+function App() {
   
 
-//   return (
-//     <>
-//           <h1>Get started</h1>
-//           {/* <SimpleForm></SimpleForm> */}
-//           {/* <FormAction></FormAction> */}
-//           {/* <ControlledField></ControlledField> */}
-//           {/* <UnControlledField></UnControlledField>
-//            */}
-//            {/* <ControlledField></ControlledField>
-//             */}
-//           {/* <HookForm></HookForm> */}
-//           <ProductManagement></ProductManagement>
-//     </>
-//   )
-// }
+  return (
+    <>
+          <h1>Get started</h1>
+          {/* <SimpleForm></SimpleForm> */}
+          {/* <FormAction></FormAction> */}
+          {/* <ControlledField></ControlledField> */}
+          {/* <UnControlledField></UnControlledField>
+           */}
+           {/* <ControlledField></ControlledField>
+            */}
+          {/* <HookForm></HookForm> */}
+          {/* <ProductManagement></ProductManagement> */}
+          <FamilyTree></FamilyTree>
+    </>
+  )
+}
 
-// export default App
+export default App
 
-// -------------------------------End:38_5-(1) to () --------------------------------
+// -------------------------------End:38_7-(1) to () --------------------------------

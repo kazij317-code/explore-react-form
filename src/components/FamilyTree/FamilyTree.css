@@ -1,0 +1,17 @@
+/* (9) st*/
+.family-tree div{
+    border: 2px solid tan;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+/* (9) en then in FamilyTree.jsx file*/
+
+
+
+/* (11) st*/
+.flex{
+    display: flex;
+}
+
+/* (11) en then in Grandpa.jsx file*/
